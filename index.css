@@ -1,11 +1,13 @@
+@font-face {
+  font-family: myFont;
+  src: url(/Fonts/Catamaran-Black.ttf);
+}
 * {
   margin: 0px;
   padding: 0px;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
-  /* font-family: "Helvetica Now", sans-serif; */
   text-decoration: none;
-  /* list-style: none; */
   scroll-behavior: smooth;
 }
 #navbar {
@@ -57,6 +59,69 @@
 #s1 {
   background-color: #29272a;
   color: #ffffff;
+  height: 2000px;
+}
+#about {
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+#about > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  line-height: 30px;
+}
+#about > div > p {
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #f6f6f6;
+}
+#about img {
+  height: 70%;
+  border-radius: 15px;
+}
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ff7b00 0%,
+    #ffa200 29%,
+    #fff301 67%,
+    #56c123 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  /* font-size: 35px;
+  font-weight: bold;
+  font-family: sans-serif; */
+  font-family: myFont;
+  font-size: 41px;
+  line-height: 73.6px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: initial;
+  font-optical-sizing: auto;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 @media screen and (max-width: 884px) and (min-width: 100px) {
   #navbar ul li a {
@@ -88,5 +153,15 @@
   }
   #check:checked ~ ul {
     left: 0;
+  }
+  #about > div:nth-child(2) {
+    grid-area: 1/1/2/2;
+  }
+  #about > div:nth-child(2) > img {
+    padding: 0px;
+  }
+  #about {
+    padding-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
