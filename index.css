@@ -59,7 +59,7 @@
 #s1 {
   background-color: #29272a;
   color: #ffffff;
-  height: 10000px;
+  /* height: 10000px; */
 }
 #about {
   width: 80%;
@@ -133,6 +133,9 @@
 } */
 /* #skillhead {
 } */
+#st {
+  margin-top: 50px;
+}
 #sk {
   margin-top: 40px;
   /* text-align: center;  */
@@ -168,6 +171,32 @@
   color: #f6f6f6;
   margin-top: 50px;
   /* margin-bottom: 20px; */
+}
+#nums {
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+#nums > div {
+  /* border: 1px solid pink; */
+  box-shadow: rgb(68, 63, 52) 0px 5px 15px;
+  padding: 20px;
+}
+#nums a {
+  text-decoration: none;
+  color: white;
+}
+#nums > div > p {
+  font-size: 17px;
+}
+.calendar {
+  width: 50%;
+  border: none;
 }
 @keyframes textclip {
   to {
@@ -228,6 +257,12 @@
   #contact {
     margin-top: 80px;
   }
+  #nums {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .calendar {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 329px) and (min-width: 100px) {
   #navbar ul li a {
@@ -274,5 +309,11 @@
   #sk {
     grid-template-columns: repeat(1, 1fr);
     /* gap: 5px; */
+  }
+  #nums {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .calendar {
+    width: 90%;
   }
 }
