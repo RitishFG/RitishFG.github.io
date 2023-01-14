@@ -153,6 +153,15 @@
 .skill_disp > h2 {
   font-size: 25px;
 }
+.skill_disp > h1 {
+  font-size: 35px;
+}
+.skill_disp {
+  gap: 10px;
+}
+.skill_disp a {
+  color: white;
+}
 .skill_disp > img {
   width: 20%;
   /* border: 1px solid red; */
@@ -180,12 +189,18 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 40px;
+  /* border-radius: 5px; */
 }
 #nums > div {
+  border-radius: 15px;
   /* border: 1px solid pink; */
   box-shadow: rgb(68, 63, 52) 0px 5px 15px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #nums a {
   text-decoration: none;
@@ -196,6 +211,9 @@
 }
 .calendar {
   width: 50%;
+  border: 2px solid red;
+}
+#clan {
   border: none;
 }
 #streak {
@@ -263,6 +281,44 @@
   font-size: 15px;
   font-weight: bold;
 }
+#ct {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+#ct > div {
+  /* border: 1px solid pink; */
+  padding-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+/* #ct > div > img {
+  height: 50%;
+} */
+#ct > div > p {
+  font-weight: bold;
+  font-size: 15px;
+}
+#fotter {
+  padding: 20px 0px;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #4c3a69;
+}
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -323,6 +379,7 @@
     margin-top: 80px;
   }
   #nums {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
   .calendar {
@@ -333,6 +390,16 @@
   }
   .card {
     grid-template-columns: repeat(1, 1fr);
+  }
+  #ct {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #ct > div > p {
+    font-size: 12px;
+  }
+  #fotter {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 329px) and (min-width: 100px) {
@@ -382,7 +449,8 @@
     /* gap: 5px; */
   }
   #nums {
-    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
   }
   .calendar {
     width: 90%;
@@ -392,5 +460,11 @@
   }
   .card {
     grid-template-columns: repeat(1, 1fr);
+  }
+  #ct {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #fotter {
+    font-size: 10px;
   }
 }
