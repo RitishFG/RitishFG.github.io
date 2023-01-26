@@ -136,7 +136,7 @@
 #st {
   margin-top: 50px;
 }
-#sk {
+.sk {
   margin-top: 40px;
   /* text-align: center;  */
   text-align: center;
@@ -365,7 +365,7 @@
     padding-top: 50px;
     grid-template-columns: repeat(1, 1fr);
   }
-  #sk {
+  .sk {
     grid-template-columns: repeat(2, 1fr);
     /* margin-top: 50px; */
   }
@@ -444,7 +444,7 @@
   #about {
     grid-template-columns: repeat(1, 1fr);
   }
-  #sk {
+  .sk {
     grid-template-columns: repeat(1, 1fr);
     /* gap: 5px; */
   }
