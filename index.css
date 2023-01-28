@@ -216,7 +216,7 @@
 #clan {
   border: none;
 }
-#streak {
+.streak {
   /* border: 1px solid pink; */
   width: 80%;
   margin: auto;
@@ -225,7 +225,7 @@
   justify-content: center;
   align-items: center;
 }
-#streak > img {
+.streak > img {
   width: 50%;
   margin: auto;
 }
@@ -385,7 +385,7 @@
   .calendar {
     width: 70%;
   }
-  #streak > img {
+  .streak > img {
     width: 100%;
   }
   .card {
@@ -455,7 +455,7 @@
   .calendar {
     width: 90%;
   }
-  #streak > img {
+  .streak > img {
     width: 100%;
   }
   .card {
