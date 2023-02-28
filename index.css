@@ -189,7 +189,7 @@
 .head {
   text-align: center;
   font-family: myFont;
-  font-size: 63px;
+  font-size: 50px;
   line-height: 73.6px;
   font-weight: 900;
   font-style: normal;
@@ -390,6 +390,7 @@
   }
   .head {
     margin-top: 50px;
+    /* font-size: 10px; */
   }
   #stats,
   #skills,
